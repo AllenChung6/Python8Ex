@@ -1,0 +1,1 @@
+/Users/allenc/PyCharmProjects/Python8Ex/dir1/file1.txt
