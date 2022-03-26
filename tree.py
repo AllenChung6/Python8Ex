@@ -7,8 +7,9 @@ from file_reader import process_file
 print(os.path.abspath('dir1'))
 
 
-def write_path_file():
-    file_path = os.path.abspath('dir1/file1.txt')
+def write_path_file(file_path):
+    # the absolute file path parameter
+    file_path = os.path.abspath(file_path)
 
     try:
         if os.path.exists(file_path):
@@ -23,4 +24,5 @@ def write_path_file():
         logging.error(e)
 
 
-write_path_file()
+# writes the absolute file path to a new file in the specified directory
+write_path_file('dir1/file1.txt')
